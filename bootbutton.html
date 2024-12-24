@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="bootbutton.css">
 </head>
 <body>
-   < <div class="container-fluid" >          <!--  create anything , it should be created in a container, there are different available containers check bootstrap                 -->
+   <div class="container-fluid" >          <!--  create anything , it should be created in a container, there are different available containers check bootstrap                 -->
         <button type="button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-success">success</button>
         <button type="button" class="btn btn-info">info</button>
@@ -32,26 +32,60 @@
         </div>
 
         <h2 class="display-4">Responsive design</h2>
-        <div class="row">
-            <div class="col-md-6 col-xl-3 bg bg-success ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quo tenetur? Consequatur delectus non, ea aspernatur veniam, voluptates ut, quo est a nulla quam vitae explicabo inventore iste eligendi animi?</div>
+        <div class="row align-items-end">
+            <div class="col-md-6 col-xl-3 bg bg-success ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quo tenetur? Consequatur delectus non, ea aspernatur veniam, voluptates ut, quo est a nulla quam vitae explicabo inventore iste eligendi animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum porro maiores nesciunt sint tempore, velit unde molestiae asperiores, assumenda aspernatur labore cum animi explicabo. Similique praesentium tenetur veritatis fugiat quibusdam.</div>
             <div class="col-md-6 col-xl-3 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quo tenetur? Consequatur delectus non, ea aspernatur veniam, voluptates ut, quo est a nulla quam vitae explicabo inventore iste eligendi animi?</div>
             <div class="col-md-6 col-xl-3 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quo tenetur? Consequatur delectus non, ea aspernatur veniam, voluptates ut, quo est a nulla quam vitae explicabo inventore iste eligendi animi?</div>
             <div class="col-md-6 col-xl-3 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quo tenetur? Consequatur delectus non, ea aspernatur veniam, voluptates ut, quo est a nulla quam vitae explicabo inventore iste eligendi animi?</div>
         </div>
-    </div>
-    <h1>photo grid</h1>
-    <div class="container">
-        <div class="row">-
-            <div class="col-xl-3 col-lg-6 ">
+        <!-- md -middle, xl- extra large, lg- large, no gutters is to remove the space between two objects, img-fluid is to make the image responsive -->
+         <!-- you can use the flex properties with the help of bootstrap -->
+    
+        <h1>photo grid</h1>
+  
+        <div class="row no-gutters " >
+            <div class="col-xl-4 col-md-6 ">
                 <img class="img-fluid" src="https://images.unsplash.com/photo-1734228416813-a842413e175f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" alt="">
             </div>
-            <div class="col-xl-3 col-lg-6 ">
+            <div class="col-xl-4 col-md-6 ">
                 <img class="img-fluid" src="https://images.unsplash.com/photo-1734383640834-a53c9c5927f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D" alt="">
             </div>
-            <div class="col-xl-3 col-lg-6 ">
+            <div class="col-xl-4 col-md-6 ">
                 <img class="img-fluid" src="https://images.unsplash.com/photo-1704791079652-f4e9043b20f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4M3x8fGVufDB8fHx8fA%3D%3D" alt="">
             </div>
         </div>
+
+        <h1 class="display-2">Forms</h1>
+        <div class="form">#nowhere
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="password">
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select class="form-control" name="state" id="state">
+                    <option value=""></option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Default checkbox
+                </label>
+              </div>
+
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Sign Me Up</label>
+              </div>
+            
+        </div>    
     </div>
 </body>
 </html>
